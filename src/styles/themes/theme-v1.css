@@ -1,0 +1,137 @@
+/* ============================================================
+   Theme V1 — "Warm Sunrise"
+   Amber/gold primary, terracotta secondary, sage tertiary.
+   Pill/rounded shapes. Elevation-based depth. No borders.
+   ============================================================ */
+
+.theme-v1 {
+  /* Override M3 reference palette — warm amber/gold tones */
+  --md-ref-palette-primary0:   #000000;
+  --md-ref-palette-primary10:  #3D1F00;
+  --md-ref-palette-primary20:  #5A2D00;
+  --md-ref-palette-primary30:  #713F00;
+  --md-ref-palette-primary40:  #8B5E0F;
+  --md-ref-palette-primary50:  #A87728;
+  --md-ref-palette-primary60:  #C69240;
+  --md-ref-palette-primary70:  #E4AE59;
+  --md-ref-palette-primary80:  #FACC15;
+  --md-ref-palette-primary90:  #FEF3C7;
+  --md-ref-palette-primary95:  #FFFBEB;
+  --md-ref-palette-primary99:  #FFFDF7;
+  --md-ref-palette-primary100: #FFFFFF;
+
+  /* Secondary: terracotta */
+  --md-ref-palette-secondary0:   #000000;
+  --md-ref-palette-secondary10:  #3B1505;
+  --md-ref-palette-secondary20:  #5C2812;
+  --md-ref-palette-secondary30:  #7D3C1F;
+  --md-ref-palette-secondary40:  #A0522D;
+  --md-ref-palette-secondary50:  #BE7049;
+  --md-ref-palette-secondary60:  #D48D65;
+  --md-ref-palette-secondary70:  #E8A87C;
+  --md-ref-palette-secondary80:  #F5C4A0;
+  --md-ref-palette-secondary90:  #FDDCBD;
+  --md-ref-palette-secondary95:  #FEEDDE;
+  --md-ref-palette-secondary99:  #FFFAF7;
+  --md-ref-palette-secondary100: #FFFFFF;
+
+  /* Tertiary: sage green */
+  --md-ref-palette-tertiary0:   #000000;
+  --md-ref-palette-tertiary10:  #1A2E16;
+  --md-ref-palette-tertiary20:  #2D4828;
+  --md-ref-palette-tertiary30:  #41623B;
+  --md-ref-palette-tertiary40:  #5B7553;
+  --md-ref-palette-tertiary50:  #748F6B;
+  --md-ref-palette-tertiary60:  #8EA884;
+  --md-ref-palette-tertiary70:  #A8C29D;
+  --md-ref-palette-tertiary80:  #A8C89A;
+  --md-ref-palette-tertiary90:  #D7EAD0;
+  --md-ref-palette-tertiary95:  #EBFAE4;
+  --md-ref-palette-tertiary99:  #F7FFF2;
+  --md-ref-palette-tertiary100: #FFFFFF;
+
+  /* Neutrals: warm gray */
+  --md-ref-palette-neutral0:   #000000;
+  --md-ref-palette-neutral10:  #201A12;
+  --md-ref-palette-neutral20:  #362F24;
+  --md-ref-palette-neutral30:  #4D4538;
+  --md-ref-palette-neutral40:  #655C4E;
+  --md-ref-palette-neutral50:  #7E7466;
+  --md-ref-palette-neutral60:  #988D7F;
+  --md-ref-palette-neutral70:  #B3A899;
+  --md-ref-palette-neutral80:  #CFC3B5;
+  --md-ref-palette-neutral90:  #EDE0D4;
+  --md-ref-palette-neutral95:  #F5EDE3;
+  --md-ref-palette-neutral99:  #FFFBF5;
+  --md-ref-palette-neutral100: #FFFFFF;
+
+  --md-ref-palette-neutral-variant10:  #1F1A12;
+  --md-ref-palette-neutral-variant20:  #352E22;
+  --md-ref-palette-neutral-variant30:  #4C4435;
+  --md-ref-palette-neutral-variant40:  #645B4A;
+  --md-ref-palette-neutral-variant50:  #7D7361;
+  --md-ref-palette-neutral-variant60:  #978C7A;
+  --md-ref-palette-neutral-variant70:  #B2A694;
+  --md-ref-palette-neutral-variant80:  #CEC1AE;
+  --md-ref-palette-neutral-variant90:  #EBDECE;
+  --md-ref-palette-neutral-variant95:  #F9EDDC;
+  --md-ref-palette-neutral-variant99:  #FFFBF5;
+
+  /* --- shadcn Bridge Variables (Light) --- */
+  --background:               var(--md-sys-color-surface);
+  --foreground:               var(--md-sys-color-on-surface);
+  --card:                     var(--md-sys-color-surface-container-low);
+  --card-foreground:          var(--md-sys-color-on-surface);
+  --primary:                  var(--md-sys-color-primary);
+  --on-primary:               var(--md-sys-color-on-primary);
+  --primary-container:        var(--md-sys-color-primary-container);
+  --on-primary-container:     var(--md-sys-color-on-primary-container);
+  --secondary:                var(--md-sys-color-secondary);
+  --on-secondary:             var(--md-sys-color-on-secondary);
+  --secondary-container:      var(--md-sys-color-secondary-container);
+  --on-secondary-container:   var(--md-sys-color-on-secondary-container);
+  --tertiary:                 var(--md-sys-color-tertiary);
+  --on-tertiary:              var(--md-sys-color-on-tertiary);
+  --surface:                  var(--md-sys-color-surface);
+  --on-surface:               var(--md-sys-color-on-surface);
+  --surface-container:        var(--md-sys-color-surface-container);
+  --surface-container-low:    var(--md-sys-color-surface-container-low);
+  --surface-container-high:   var(--md-sys-color-surface-container-high);
+  --on-surface-variant:       var(--md-sys-color-on-surface-variant);
+  --muted:                    var(--md-sys-color-surface-container);
+  --muted-foreground:         var(--md-sys-color-on-surface-variant);
+  --accent:                   var(--md-sys-color-secondary-container);
+  --accent-foreground:        var(--md-sys-color-on-secondary-container);
+  --destructive:              var(--md-sys-color-error);
+  --destructive-foreground:   var(--md-sys-color-on-error);
+  --border:                   transparent;
+  --input:                    var(--md-sys-color-surface-container-high);
+  --ring:                     var(--md-sys-color-primary);
+  --outline:                  var(--md-sys-color-outline);
+  --outline-variant:          var(--md-sys-color-outline-variant);
+  --inverse-surface:          var(--md-sys-color-inverse-surface);
+  --inverse-on-surface:       var(--md-sys-color-inverse-on-surface);
+  --inverse-primary:          var(--md-sys-color-inverse-primary);
+  --scrim:                    var(--md-sys-color-scrim);
+  --error:                    var(--md-sys-color-error);
+  --on-error:                 var(--md-sys-color-on-error);
+  --error-container:          var(--md-sys-color-error-container);
+  --on-error-container:       var(--md-sys-color-on-error-container);
+  --popover:                  var(--md-sys-color-surface-container-low);
+  --popover-foreground:       var(--md-sys-color-on-surface);
+
+  /* --- Shape: rounded, generous radii (pill style) --- */
+  --radius-small:       8px;
+  --radius-medium:      12px;
+  --radius-large:       16px;
+  --radius-extra-large: 28px;
+  --radius-full:        9999px;
+
+  /* --- Component behavior --- */
+  --component-border-width: 0px;
+}
+
+/* Dark mode overrides for V1 */
+.dark .theme-v1 {
+  --border: transparent;
+}

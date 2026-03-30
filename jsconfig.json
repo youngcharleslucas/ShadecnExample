@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@ui-v1/*": ["src/Components/Ui/V1/*"],
+      "@ui-v2/*": ["src/Components/Ui/V2/*"],
+      "@ui-v3/*": ["src/Components/Ui/V3/*"]
+    },
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}

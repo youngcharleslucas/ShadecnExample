@@ -1,0 +1,138 @@
+/* ============================================================
+   Theme V3 — "Neon Blueprint"
+   Deep navy/charcoal base. Electric cyan primary, coral secondary,
+   lime tertiary. Asymmetric chamfered corners. Visible outlines.
+   ============================================================ */
+
+.theme-v3 {
+  /* Override M3 reference palette — electric cyan tones */
+  --md-ref-palette-primary0:   #000000;
+  --md-ref-palette-primary10:  #083344;
+  --md-ref-palette-primary20:  #0E4F68;
+  --md-ref-palette-primary30:  #155E75;
+  --md-ref-palette-primary40:  #0891B2;
+  --md-ref-palette-primary50:  #06B6D4;
+  --md-ref-palette-primary60:  #22D3EE;
+  --md-ref-palette-primary70:  #67E8F9;
+  --md-ref-palette-primary80:  #A5F3FC;
+  --md-ref-palette-primary90:  #CFFAFE;
+  --md-ref-palette-primary95:  #ECFEFF;
+  --md-ref-palette-primary99:  #F8FEFF;
+  --md-ref-palette-primary100: #FFFFFF;
+
+  /* Secondary: coral/rose */
+  --md-ref-palette-secondary0:   #000000;
+  --md-ref-palette-secondary10:  #4C0519;
+  --md-ref-palette-secondary20:  #881337;
+  --md-ref-palette-secondary30:  #9F1239;
+  --md-ref-palette-secondary40:  #BE123C;
+  --md-ref-palette-secondary50:  #E11D48;
+  --md-ref-palette-secondary60:  #F43F5E;
+  --md-ref-palette-secondary70:  #FB7185;
+  --md-ref-palette-secondary80:  #FDA4AF;
+  --md-ref-palette-secondary90:  #FFE4E6;
+  --md-ref-palette-secondary95:  #FFF1F2;
+  --md-ref-palette-secondary99:  #FFFAFA;
+  --md-ref-palette-secondary100: #FFFFFF;
+
+  /* Tertiary: lime */
+  --md-ref-palette-tertiary0:   #000000;
+  --md-ref-palette-tertiary10:  #1A2E05;
+  --md-ref-palette-tertiary20:  #365314;
+  --md-ref-palette-tertiary30:  #3F6212;
+  --md-ref-palette-tertiary40:  #4D7C0F;
+  --md-ref-palette-tertiary50:  #65A30D;
+  --md-ref-palette-tertiary60:  #84CC16;
+  --md-ref-palette-tertiary70:  #A3E635;
+  --md-ref-palette-tertiary80:  #BEF264;
+  --md-ref-palette-tertiary90:  #D9F99D;
+  --md-ref-palette-tertiary95:  #ECFCCB;
+  --md-ref-palette-tertiary99:  #F7FEE7;
+  --md-ref-palette-tertiary100: #FFFFFF;
+
+  /* Neutrals: deep navy/charcoal */
+  --md-ref-palette-neutral0:   #000000;
+  --md-ref-palette-neutral10:  #0F172A;
+  --md-ref-palette-neutral20:  #1E293B;
+  --md-ref-palette-neutral30:  #334155;
+  --md-ref-palette-neutral40:  #475569;
+  --md-ref-palette-neutral50:  #64748B;
+  --md-ref-palette-neutral60:  #94A3B8;
+  --md-ref-palette-neutral70:  #CBD5E1;
+  --md-ref-palette-neutral80:  #E2E8F0;
+  --md-ref-palette-neutral90:  #F1F5F9;
+  --md-ref-palette-neutral95:  #F8FAFC;
+  --md-ref-palette-neutral99:  #F8FAFC;
+  --md-ref-palette-neutral100: #FFFFFF;
+
+  --md-ref-palette-neutral-variant10:  #0C1929;
+  --md-ref-palette-neutral-variant20:  #172236;
+  --md-ref-palette-neutral-variant30:  #253347;
+  --md-ref-palette-neutral-variant40:  #334658;
+  --md-ref-palette-neutral-variant50:  #42596B;
+  --md-ref-palette-neutral-variant60:  #527080;
+  --md-ref-palette-neutral-variant70:  #6B8FA3;
+  --md-ref-palette-neutral-variant80:  #94B5C8;
+  --md-ref-palette-neutral-variant90:  #C2D8E6;
+  --md-ref-palette-neutral-variant95:  #E0EDF5;
+  --md-ref-palette-neutral-variant99:  #F2F8FC;
+
+  /* --- shadcn Bridge Variables (Light) --- */
+  --background:               var(--md-sys-color-surface);
+  --foreground:               var(--md-sys-color-on-surface);
+  --card:                     var(--md-sys-color-surface-container-low);
+  --card-foreground:          var(--md-sys-color-on-surface);
+  --primary:                  var(--md-sys-color-primary);
+  --on-primary:               var(--md-sys-color-on-primary);
+  --primary-container:        var(--md-sys-color-primary-container);
+  --on-primary-container:     var(--md-sys-color-on-primary-container);
+  --secondary:                var(--md-sys-color-secondary);
+  --on-secondary:             var(--md-sys-color-on-secondary);
+  --secondary-container:      var(--md-sys-color-secondary-container);
+  --on-secondary-container:   var(--md-sys-color-on-secondary-container);
+  --tertiary:                 var(--md-sys-color-tertiary);
+  --on-tertiary:              var(--md-sys-color-on-tertiary);
+  --surface:                  var(--md-sys-color-surface);
+  --on-surface:               var(--md-sys-color-on-surface);
+  --surface-container:        var(--md-sys-color-surface-container);
+  --surface-container-low:    var(--md-sys-color-surface-container-low);
+  --surface-container-high:   var(--md-sys-color-surface-container-high);
+  --on-surface-variant:       var(--md-sys-color-on-surface-variant);
+  --muted:                    var(--md-sys-color-surface-container);
+  --muted-foreground:         var(--md-sys-color-on-surface-variant);
+  --accent:                   var(--md-sys-color-secondary-container);
+  --accent-foreground:        var(--md-sys-color-on-secondary-container);
+  --destructive:              var(--md-sys-color-error);
+  --destructive-foreground:   var(--md-sys-color-on-error);
+  --border:                   var(--md-sys-color-outline);
+  --input:                    var(--md-sys-color-surface-container-high);
+  --ring:                     var(--md-sys-color-primary);
+  --outline:                  var(--md-sys-color-outline);
+  --outline-variant:          var(--md-sys-color-outline-variant);
+  --inverse-surface:          var(--md-sys-color-inverse-surface);
+  --inverse-on-surface:       var(--md-sys-color-inverse-on-surface);
+  --inverse-primary:          var(--md-sys-color-inverse-primary);
+  --scrim:                    var(--md-sys-color-scrim);
+  --error:                    var(--md-sys-color-error);
+  --on-error:                 var(--md-sys-color-on-error);
+  --error-container:          var(--md-sys-color-error-container);
+  --on-error-container:       var(--md-sys-color-on-error-container);
+  --popover:                  var(--md-sys-color-surface-container-low);
+  --popover-foreground:       var(--md-sys-color-on-surface);
+
+  /* --- Shape: asymmetric chamfer (diagonal corners) --- */
+  --radius-small:       0px 4px 0px 4px;
+  --radius-medium:      0px 8px 0px 8px;
+  --radius-large:       0px 12px 0px 12px;
+  --radius-extra-large: 0px 16px 0px 16px;
+  --radius-full:        0px 16px 0px 16px;
+
+  /* --- Component behavior: visible borders --- */
+  --component-border-width: 1.5px;
+}
+
+/* Dark mode: V3 looks best on a dark base */
+.dark .theme-v3 {
+  --background: var(--md-sys-color-surface);
+  --card: var(--md-sys-color-surface-container);
+}

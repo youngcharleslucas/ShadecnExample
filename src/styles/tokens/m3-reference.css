@@ -1,0 +1,98 @@
+/* ============================================================
+   M3 Reference Palette
+   In a real workflow this file is auto-generated from the
+   Figma M3 Theme Builder plugin → Design Token export (JSON)
+   → Style Dictionary → CSS custom properties.
+   ============================================================ */
+
+:root {
+  /* --- Primary Tonal Palette (example: a blue-ish hue) --- */
+  --md-ref-palette-primary0:   #000000;
+  --md-ref-palette-primary10:  #001F2A;
+  --md-ref-palette-primary20:  #003544;
+  --md-ref-palette-primary30:  #004D61;
+  --md-ref-palette-primary40:  #006780;
+  --md-ref-palette-primary50:  #0081A1;
+  --md-ref-palette-primary60:  #009CC3;
+  --md-ref-palette-primary70:  #21B8E0;
+  --md-ref-palette-primary80:  #54D2F9;
+  --md-ref-palette-primary90:  #B8EAFF;
+  --md-ref-palette-primary95:  #DCEFFF;
+  --md-ref-palette-primary99:  #F5FAFF;
+  --md-ref-palette-primary100: #FFFFFF;
+
+  /* --- Secondary Tonal Palette --- */
+  --md-ref-palette-secondary0:   #000000;
+  --md-ref-palette-secondary10:  #0C1B23;
+  --md-ref-palette-secondary20:  #213039;
+  --md-ref-palette-secondary30:  #374650;
+  --md-ref-palette-secondary40:  #4F5D68;
+  --md-ref-palette-secondary50:  #677681;
+  --md-ref-palette-secondary60:  #81909B;
+  --md-ref-palette-secondary70:  #9BAAB6;
+  --md-ref-palette-secondary80:  #B6C5D2;
+  --md-ref-palette-secondary90:  #D2E1EE;
+  --md-ref-palette-secondary95:  #E0F0FD;
+  --md-ref-palette-secondary99:  #F5FAFF;
+  --md-ref-palette-secondary100: #FFFFFF;
+
+  /* --- Tertiary Tonal Palette --- */
+  --md-ref-palette-tertiary0:   #000000;
+  --md-ref-palette-tertiary10:  #1A1249;
+  --md-ref-palette-tertiary20:  #302661;
+  --md-ref-palette-tertiary30:  #463D79;
+  --md-ref-palette-tertiary40:  #5F5592;
+  --md-ref-palette-tertiary50:  #786DAD;
+  --md-ref-palette-tertiary60:  #9287C8;
+  --md-ref-palette-tertiary70:  #ADA2E4;
+  --md-ref-palette-tertiary80:  #C9BEFF;
+  --md-ref-palette-tertiary90:  #E5DEFF;
+  --md-ref-palette-tertiary95:  #F3EDFF;
+  --md-ref-palette-tertiary99:  #FCFAFF;
+  --md-ref-palette-tertiary100: #FFFFFF;
+
+  /* --- Error Tonal Palette --- */
+  --md-ref-palette-error0:   #000000;
+  --md-ref-palette-error10:  #410002;
+  --md-ref-palette-error20:  #690005;
+  --md-ref-palette-error30:  #93000A;
+  --md-ref-palette-error40:  #BA1A1A;
+  --md-ref-palette-error50:  #DE3730;
+  --md-ref-palette-error60:  #FF5449;
+  --md-ref-palette-error70:  #FF897D;
+  --md-ref-palette-error80:  #FFB4AB;
+  --md-ref-palette-error90:  #FFDAD6;
+  --md-ref-palette-error95:  #FFEDEA;
+  --md-ref-palette-error99:  #FFFBFF;
+  --md-ref-palette-error100: #FFFFFF;
+
+  /* --- Neutral Tonal Palette --- */
+  --md-ref-palette-neutral0:   #000000;
+  --md-ref-palette-neutral10:  #191C1E;
+  --md-ref-palette-neutral20:  #2E3133;
+  --md-ref-palette-neutral30:  #444749;
+  --md-ref-palette-neutral40:  #5C5F61;
+  --md-ref-palette-neutral50:  #75787A;
+  --md-ref-palette-neutral60:  #8F9193;
+  --md-ref-palette-neutral70:  #A9ACAE;
+  --md-ref-palette-neutral80:  #C5C7C9;
+  --md-ref-palette-neutral90:  #E1E3E5;
+  --md-ref-palette-neutral95:  #EFF1F3;
+  --md-ref-palette-neutral99:  #FAFCFE;
+  --md-ref-palette-neutral100: #FFFFFF;
+
+  /* --- Neutral Variant Tonal Palette --- */
+  --md-ref-palette-neutral-variant0:   #000000;
+  --md-ref-palette-neutral-variant10:  #151D22;
+  --md-ref-palette-neutral-variant20:  #2A3237;
+  --md-ref-palette-neutral-variant30:  #40484D;
+  --md-ref-palette-neutral-variant40:  #586065;
+  --md-ref-palette-neutral-variant50:  #70787E;
+  --md-ref-palette-neutral-variant60:  #8A9298;
+  --md-ref-palette-neutral-variant70:  #A4ACB2;
+  --md-ref-palette-neutral-variant80:  #C0C8CD;
+  --md-ref-palette-neutral-variant90:  #DCE4E9;
+  --md-ref-palette-neutral-variant95:  #EAF2F8;
+  --md-ref-palette-neutral-variant99:  #F5FAFF;
+  --md-ref-palette-neutral-variant100: #FFFFFF;
+}

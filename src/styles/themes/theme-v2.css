@@ -1,0 +1,137 @@
+/* ============================================================
+   Theme V2 — "Cool Steel"
+   Indigo primary, slate secondary, teal tertiary.
+   Square/geometric corners. No borders. Contrast-based depth.
+   ============================================================ */
+
+.theme-v2 {
+  /* Override M3 reference palette — indigo tones */
+  --md-ref-palette-primary0:   #000000;
+  --md-ref-palette-primary10:  #1E1B4B;
+  --md-ref-palette-primary20:  #272368;
+  --md-ref-palette-primary30:  #312E81;
+  --md-ref-palette-primary40:  #3730A3;
+  --md-ref-palette-primary50:  #4338CA;
+  --md-ref-palette-primary60:  #4F46E5;
+  --md-ref-palette-primary70:  #6366F1;
+  --md-ref-palette-primary80:  #818CF8;
+  --md-ref-palette-primary90:  #C7D2FE;
+  --md-ref-palette-primary95:  #E0E7FF;
+  --md-ref-palette-primary99:  #F5F7FF;
+  --md-ref-palette-primary100: #FFFFFF;
+
+  /* Secondary: slate */
+  --md-ref-palette-secondary0:   #000000;
+  --md-ref-palette-secondary10:  #0F172A;
+  --md-ref-palette-secondary20:  #1E293B;
+  --md-ref-palette-secondary30:  #334155;
+  --md-ref-palette-secondary40:  #475569;
+  --md-ref-palette-secondary50:  #64748B;
+  --md-ref-palette-secondary60:  #94A3B8;
+  --md-ref-palette-secondary70:  #CBD5E1;
+  --md-ref-palette-secondary80:  #E2E8F0;
+  --md-ref-palette-secondary90:  #F1F5F9;
+  --md-ref-palette-secondary95:  #F8FAFC;
+  --md-ref-palette-secondary99:  #FAFAFA;
+  --md-ref-palette-secondary100: #FFFFFF;
+
+  /* Tertiary: teal */
+  --md-ref-palette-tertiary0:   #000000;
+  --md-ref-palette-tertiary10:  #042F2E;
+  --md-ref-palette-tertiary20:  #134E4A;
+  --md-ref-palette-tertiary30:  #115E59;
+  --md-ref-palette-tertiary40:  #0F766E;
+  --md-ref-palette-tertiary50:  #0D9488;
+  --md-ref-palette-tertiary60:  #14B8A6;
+  --md-ref-palette-tertiary70:  #2DD4BF;
+  --md-ref-palette-tertiary80:  #5EEAD4;
+  --md-ref-palette-tertiary90:  #99F6E4;
+  --md-ref-palette-tertiary95:  #CCFBF1;
+  --md-ref-palette-tertiary99:  #F0FDFA;
+  --md-ref-palette-tertiary100: #FFFFFF;
+
+  /* Neutrals: cool gray / slate */
+  --md-ref-palette-neutral0:   #000000;
+  --md-ref-palette-neutral10:  #0F172A;
+  --md-ref-palette-neutral20:  #1E293B;
+  --md-ref-palette-neutral30:  #334155;
+  --md-ref-palette-neutral40:  #475569;
+  --md-ref-palette-neutral50:  #64748B;
+  --md-ref-palette-neutral60:  #94A3B8;
+  --md-ref-palette-neutral70:  #CBD5E1;
+  --md-ref-palette-neutral80:  #E2E8F0;
+  --md-ref-palette-neutral90:  #F1F5F9;
+  --md-ref-palette-neutral95:  #F8FAFC;
+  --md-ref-palette-neutral99:  #FAFAFA;
+  --md-ref-palette-neutral100: #FFFFFF;
+
+  --md-ref-palette-neutral-variant10:  #0F1729;
+  --md-ref-palette-neutral-variant20:  #1E2840;
+  --md-ref-palette-neutral-variant30:  #2E3D59;
+  --md-ref-palette-neutral-variant40:  #3D5270;
+  --md-ref-palette-neutral-variant50:  #4D6788;
+  --md-ref-palette-neutral-variant60:  #6B87A8;
+  --md-ref-palette-neutral-variant70:  #8FA8C8;
+  --md-ref-palette-neutral-variant80:  #B3C9E5;
+  --md-ref-palette-neutral-variant90:  #D6E3F4;
+  --md-ref-palette-neutral-variant95:  #EBF1FA;
+  --md-ref-palette-neutral-variant99:  #F5F8FD;
+
+  /* --- shadcn Bridge Variables (Light) --- */
+  --background:               var(--md-sys-color-surface);
+  --foreground:               var(--md-sys-color-on-surface);
+  --card:                     var(--md-sys-color-surface-container-low);
+  --card-foreground:          var(--md-sys-color-on-surface);
+  --primary:                  var(--md-sys-color-primary);
+  --on-primary:               var(--md-sys-color-on-primary);
+  --primary-container:        var(--md-sys-color-primary-container);
+  --on-primary-container:     var(--md-sys-color-on-primary-container);
+  --secondary:                var(--md-sys-color-secondary);
+  --on-secondary:             var(--md-sys-color-on-secondary);
+  --secondary-container:      var(--md-sys-color-secondary-container);
+  --on-secondary-container:   var(--md-sys-color-on-secondary-container);
+  --tertiary:                 var(--md-sys-color-tertiary);
+  --on-tertiary:              var(--md-sys-color-on-tertiary);
+  --surface:                  var(--md-sys-color-surface);
+  --on-surface:               var(--md-sys-color-on-surface);
+  --surface-container:        var(--md-sys-color-surface-container);
+  --surface-container-low:    var(--md-sys-color-surface-container-low);
+  --surface-container-high:   var(--md-sys-color-surface-container-high);
+  --on-surface-variant:       var(--md-sys-color-on-surface-variant);
+  --muted:                    var(--md-sys-color-surface-container);
+  --muted-foreground:         var(--md-sys-color-on-surface-variant);
+  --accent:                   var(--md-sys-color-secondary-container);
+  --accent-foreground:        var(--md-sys-color-on-secondary-container);
+  --destructive:              var(--md-sys-color-error);
+  --destructive-foreground:   var(--md-sys-color-on-error);
+  --border:                   transparent;
+  --input:                    var(--md-sys-color-surface-container-high);
+  --ring:                     var(--md-sys-color-primary);
+  --outline:                  var(--md-sys-color-outline);
+  --outline-variant:          var(--md-sys-color-outline-variant);
+  --inverse-surface:          var(--md-sys-color-inverse-surface);
+  --inverse-on-surface:       var(--md-sys-color-inverse-on-surface);
+  --inverse-primary:          var(--md-sys-color-inverse-primary);
+  --scrim:                    var(--md-sys-color-scrim);
+  --error:                    var(--md-sys-color-error);
+  --on-error:                 var(--md-sys-color-on-error);
+  --error-container:          var(--md-sys-color-error-container);
+  --on-error-container:       var(--md-sys-color-on-error-container);
+  --popover:                  var(--md-sys-color-surface-container-low);
+  --popover-foreground:       var(--md-sys-color-on-surface);
+
+  /* --- Shape: square/geometric (all 0px) --- */
+  --radius-small:       0px;
+  --radius-medium:      0px;
+  --radius-large:       0px;
+  --radius-extra-large: 2px;
+  --radius-full:        0px;
+
+  /* --- Component behavior --- */
+  --component-border-width: 0px;
+}
+
+/* Dark mode overrides for V2 */
+.dark .theme-v2 {
+  --border: transparent;
+}
