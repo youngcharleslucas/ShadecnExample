@@ -7,8 +7,10 @@ import { OverlaysShowcase } from "@/Features/Showcase/V3/Components/OverlaysShow
 import { NavigationShowcase } from "@/Features/Showcase/V3/Components/NavigationShowcase/NavigationShowcase"
 import { TogglesShowcase } from "@/Features/Showcase/V3/Components/TogglesShowcase/TogglesShowcase"
 import { Separator } from "@ui-v3/separator"
+import useVersion, { VERSIONS } from "@/Shared/VersionHook/VersionHook"
 
 export function ShowcaseV3() {
+  useVersion(VERSIONS.V3)
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 space-y-16">
       <div>

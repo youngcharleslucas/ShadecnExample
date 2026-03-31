@@ -1,3 +1,4 @@
+import useVersion, { VERSIONS } from "@/Shared/VersionHook/VersionHook"
 import { ButtonShowcase } from "@/Features/Showcase/V1/Components/ButtonShowcase/ButtonShowcase"
 import { CardShowcase } from "@/Features/Showcase/V1/Components/CardShowcase/CardShowcase"
 import { InputShowcase } from "@/Features/Showcase/V1/Components/InputShowcase/InputShowcase"
@@ -9,6 +10,7 @@ import { TogglesShowcase } from "@/Features/Showcase/V1/Components/TogglesShowca
 import { Separator } from "@ui-v1/separator"
 
 export function ShowcaseV1() {
+  useVersion(VERSIONS.V1)
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 space-y-16">
       <div>

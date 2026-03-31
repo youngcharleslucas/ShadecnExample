@@ -4,8 +4,10 @@ import { FeatureCards } from "@/Features/MockSiteV2/Components/FeatureCards/Feat
 import { PricingTable } from "@/Features/MockSiteV2/Components/PricingTable/PricingTable"
 import { Testimonials } from "@/Features/MockSiteV2/Components/Testimonials/Testimonials"
 import { Footer } from "@/Features/MockSiteV2/Components/Footer/Footer"
+import useVersion, { VERSIONS } from "@/Shared/VersionHook/VersionHook"
 
 export function MockSiteV2() {
+  useVersion(VERSIONS.V2)
   return (
     <div className="bg-background text-foreground">
       <Navbar />
