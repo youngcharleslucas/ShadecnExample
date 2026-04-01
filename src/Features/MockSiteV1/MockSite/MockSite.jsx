@@ -9,7 +9,7 @@ import useVersion, { VERSIONS } from "@/Shared/VersionHook/VersionHook"
 export function MockSiteV1() {
   useVersion(VERSIONS.V1)
   return (
-    <div className="theme-v1 bg-background text-foreground">
+    <div className="theme-v1 bg-[#000000] text-foreground">
       <Navbar />
       <Hero />
       <FeatureCards />
