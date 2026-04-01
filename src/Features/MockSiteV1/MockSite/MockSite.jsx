@@ -7,7 +7,7 @@ import { Footer } from "@/Features/MockSiteV1/Components/Footer/Footer"
 import useVersion, { VERSIONS } from "@/Shared/VersionHook/VersionHook"
 
 export function MockSiteV1() {
-  useVersion(VERSIONS.V1)
+  useVersion(VERSIONS.V2)
   return (
     <div className="theme-v1 bg-background text-foreground">
       <Navbar />
