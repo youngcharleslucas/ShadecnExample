@@ -77,79 +77,48 @@
   --md-ref-palette-neutral-variant95:  #F9EDDC;
   --md-ref-palette-neutral-variant99:  #FFFBF5;
 
-  /* --- M3 System Tokens (light, scoped so self-contained components resolve correctly) --- */
-  --md-sys-color-surface:                var(--md-ref-palette-neutral99);
-  --md-sys-color-surface-dim:            var(--md-ref-palette-neutral90);
-  --md-sys-color-surface-bright:         var(--md-ref-palette-neutral99);
-  --md-sys-color-surface-container:      var(--md-ref-palette-neutral95);
-  --md-sys-color-surface-container-low:  var(--md-ref-palette-neutral95);
-  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral90);
-  --md-sys-color-on-surface:             var(--md-ref-palette-neutral10);
-  --md-sys-color-on-surface-variant:     var(--md-ref-palette-neutral-variant30);
-  --md-sys-color-primary:                var(--md-ref-palette-primary40);
-  --md-sys-color-on-primary:             var(--md-ref-palette-primary100);
-  --md-sys-color-primary-container:      var(--md-ref-palette-primary90);
-  --md-sys-color-on-primary-container:   var(--md-ref-palette-primary10);
-  --md-sys-color-secondary:              var(--md-ref-palette-secondary40);
-  --md-sys-color-on-secondary:           var(--md-ref-palette-secondary100);
-  --md-sys-color-secondary-container:    var(--md-ref-palette-secondary90);
-  --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary10);
-  --md-sys-color-tertiary:               var(--md-ref-palette-tertiary40);
-  --md-sys-color-on-tertiary:            var(--md-ref-palette-tertiary100);
-  --md-sys-color-tertiary-container:     var(--md-ref-palette-tertiary90);
-  --md-sys-color-on-tertiary-container:  var(--md-ref-palette-tertiary10);
-  --md-sys-color-error:                  var(--md-ref-palette-error40);
-  --md-sys-color-on-error:               var(--md-ref-palette-error100);
-  --md-sys-color-error-container:        var(--md-ref-palette-error90);
-  --md-sys-color-on-error-container:     var(--md-ref-palette-error10);
-  --md-sys-color-outline:                var(--md-ref-palette-neutral-variant50);
-  --md-sys-color-outline-variant:        var(--md-ref-palette-neutral-variant80);
-  --md-sys-color-inverse-surface:        var(--md-ref-palette-neutral20);
-  --md-sys-color-inverse-on-surface:     var(--md-ref-palette-neutral95);
-  --md-sys-color-inverse-primary:        var(--md-ref-palette-primary80);
-
   /* --- shadcn Bridge Variables (Light) --- */
-  --background:               var(--md-sys-color-surface);
-  --foreground:               var(--md-sys-color-on-surface);
-  --card:                     var(--md-sys-color-surface-container-low);
-  --card-foreground:          var(--md-sys-color-on-surface);
-  --primary:                  var(--md-sys-color-primary);
-  --on-primary:               var(--md-sys-color-on-primary);
-  --primary-container:        var(--md-sys-color-primary-container);
-  --on-primary-container:     var(--md-sys-color-on-primary-container);
-  --secondary:                var(--md-sys-color-secondary);
-  --on-secondary:             var(--md-sys-color-on-secondary);
-  --secondary-container:      var(--md-sys-color-secondary-container);
-  --on-secondary-container:   var(--md-sys-color-on-secondary-container);
-  --tertiary:                 var(--md-sys-color-tertiary);
-  --on-tertiary:              var(--md-sys-color-on-tertiary);
-  --surface:                  var(--md-sys-color-surface);
-  --on-surface:               var(--md-sys-color-on-surface);
-  --surface-container:        var(--md-sys-color-surface-container);
-  --surface-container-low:    var(--md-sys-color-surface-container-low);
-  --surface-container-high:   var(--md-sys-color-surface-container-high);
-  --on-surface-variant:       var(--md-sys-color-on-surface-variant);
-  --muted:                    var(--md-sys-color-surface-container);
-  --muted-foreground:         var(--md-sys-color-on-surface-variant);
-  --accent:                   var(--md-sys-color-secondary-container);
-  --accent-foreground:        var(--md-sys-color-on-secondary-container);
-  --destructive:              var(--md-sys-color-error);
-  --destructive-foreground:   var(--md-sys-color-on-error);
+  --background:               #FFFBF5; /* md-sys-color-surface */
+  --foreground:               #201A12; /* md-sys-color-on-surface */
+  --card:                     #F5EDE3; /* md-sys-color-surface-container-low */
+  --card-foreground:          #201A12; /* md-sys-color-on-surface */
+  --primary:                  #8B5E0F; /* md-sys-color-primary */
+  --on-primary:               #FFFFFF; /* md-sys-color-on-primary */
+  --primary-container:        #FEF3C7; /* md-sys-color-primary-container */
+  --on-primary-container:     #3D1F00; /* md-sys-color-on-primary-container */
+  --secondary:                #A0522D; /* md-sys-color-secondary */
+  --on-secondary:             #FFFFFF; /* md-sys-color-on-secondary */
+  --secondary-container:      #FDDCBD; /* md-sys-color-secondary-container */
+  --on-secondary-container:   #3B1505; /* md-sys-color-on-secondary-container */
+  --tertiary:                 #5B7553; /* md-sys-color-tertiary */
+  --on-tertiary:              #FFFFFF; /* md-sys-color-on-tertiary */
+  --surface:                  #FFFBF5; /* md-sys-color-surface */
+  --on-surface:               #201A12; /* md-sys-color-on-surface */
+  --surface-container:        #F5EDE3; /* md-sys-color-surface-container */
+  --surface-container-low:    #F5EDE3; /* md-sys-color-surface-container-low */
+  --surface-container-high:   #EDE0D4; /* md-sys-color-surface-container-high */
+  --on-surface-variant:       #4C4435; /* md-sys-color-on-surface-variant */
+  --muted:                    #F5EDE3; /* md-sys-color-surface-container */
+  --muted-foreground:         #4C4435; /* md-sys-color-on-surface-variant */
+  --accent:                   #FDDCBD; /* md-sys-color-secondary-container */
+  --accent-foreground:        #3B1505; /* md-sys-color-on-secondary-container */
+  --destructive:              #BA1A1A; /* md-sys-color-error */
+  --destructive-foreground:   #FFFFFF; /* md-sys-color-on-error */
   --border:                   transparent;
-  --input:                    var(--md-sys-color-surface-container-high);
-  --ring:                     var(--md-sys-color-primary);
-  --outline:                  var(--md-sys-color-outline);
-  --outline-variant:          var(--md-sys-color-outline-variant);
-  --inverse-surface:          var(--md-sys-color-inverse-surface);
-  --inverse-on-surface:       var(--md-sys-color-inverse-on-surface);
-  --inverse-primary:          var(--md-sys-color-inverse-primary);
-  --scrim:                    var(--md-sys-color-scrim);
-  --error:                    var(--md-sys-color-error);
-  --on-error:                 var(--md-sys-color-on-error);
-  --error-container:          var(--md-sys-color-error-container);
-  --on-error-container:       var(--md-sys-color-on-error-container);
-  --popover:                  var(--md-sys-color-surface-container-low);
-  --popover-foreground:       var(--md-sys-color-on-surface);
+  --input:                    #EDE0D4; /* md-sys-color-surface-container-high */
+  --ring:                     #8B5E0F; /* md-sys-color-primary */
+  --outline:                  #7D7361; /* md-sys-color-outline */
+  --outline-variant:          #CEC1AE; /* md-sys-color-outline-variant */
+  --inverse-surface:          #362F24; /* md-sys-color-inverse-surface */
+  --inverse-on-surface:       #F5EDE3; /* md-sys-color-inverse-on-surface */
+  --inverse-primary:          #FACC15; /* md-sys-color-inverse-primary */
+  --scrim:                    #000000; /* md-sys-color-scrim */
+  --error:                    #BA1A1A; /* md-sys-color-error */
+  --on-error:                 #FFFFFF; /* md-sys-color-on-error */
+  --error-container:          #FFDAD6; /* md-sys-color-error-container */
+  --on-error-container:       #410002; /* md-sys-color-on-error-container */
+  --popover:                  #F5EDE3; /* md-sys-color-surface-container-low */
+  --popover-foreground:       #201A12; /* md-sys-color-on-surface */
 
   /* --- Shape: rounded, generous radii (pill style) --- */
   --radius-small:       8px;
@@ -163,7 +132,10 @@
 }
 
 /* Dark mode overrides for V1 */
+.dark.theme-v1,
 .dark .theme-v1 {
+  --border: transparent;
+
   --md-sys-color-surface:                var(--md-ref-palette-neutral10);
   --md-sys-color-surface-dim:            var(--md-ref-palette-neutral0);
   --md-sys-color-surface-bright:         var(--md-ref-palette-neutral20);
@@ -172,26 +144,74 @@
   --md-sys-color-surface-container-high: var(--md-ref-palette-neutral30);
   --md-sys-color-on-surface:             var(--md-ref-palette-neutral90);
   --md-sys-color-on-surface-variant:     var(--md-ref-palette-neutral-variant80);
-  --md-sys-color-primary:                var(--md-ref-palette-primary80);
-  --md-sys-color-on-primary:             var(--md-ref-palette-primary20);
-  --md-sys-color-primary-container:      var(--md-ref-palette-primary30);
-  --md-sys-color-on-primary-container:   var(--md-ref-palette-primary90);
+
+  --md-sys-color-primary:               var(--md-ref-palette-primary80);
+  --md-sys-color-on-primary:            var(--md-ref-palette-primary20);
+  --md-sys-color-primary-container:     var(--md-ref-palette-primary30);
+  --md-sys-color-on-primary-container:  var(--md-ref-palette-primary90);
+
   --md-sys-color-secondary:              var(--md-ref-palette-secondary80);
   --md-sys-color-on-secondary:           var(--md-ref-palette-secondary20);
   --md-sys-color-secondary-container:    var(--md-ref-palette-secondary30);
   --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary90);
-  --md-sys-color-tertiary:               var(--md-ref-palette-tertiary80);
-  --md-sys-color-on-tertiary:            var(--md-ref-palette-tertiary20);
-  --md-sys-color-tertiary-container:     var(--md-ref-palette-tertiary30);
-  --md-sys-color-on-tertiary-container:  var(--md-ref-palette-tertiary90);
-  --md-sys-color-error:                  var(--md-ref-palette-error80);
-  --md-sys-color-on-error:               var(--md-ref-palette-error20);
-  --md-sys-color-error-container:        var(--md-ref-palette-error30);
-  --md-sys-color-on-error-container:     var(--md-ref-palette-error90);
-  --md-sys-color-outline:                var(--md-ref-palette-neutral-variant60);
-  --md-sys-color-outline-variant:        var(--md-ref-palette-neutral-variant30);
-  --md-sys-color-inverse-surface:        var(--md-ref-palette-neutral90);
-  --md-sys-color-inverse-on-surface:     var(--md-ref-palette-neutral20);
-  --md-sys-color-inverse-primary:        var(--md-ref-palette-primary40);
-  --border: transparent;
+
+  --md-sys-color-tertiary:              var(--md-ref-palette-tertiary80);
+  --md-sys-color-on-tertiary:           var(--md-ref-palette-tertiary20);
+  --md-sys-color-tertiary-container:    var(--md-ref-palette-tertiary30);
+  --md-sys-color-on-tertiary-container: var(--md-ref-palette-tertiary90);
+
+  --md-sys-color-error:               var(--md-ref-palette-error80);
+  --md-sys-color-on-error:            var(--md-ref-palette-error20);
+  --md-sys-color-error-container:     var(--md-ref-palette-error30);
+  --md-sys-color-on-error-container:  var(--md-ref-palette-error90);
+
+  --md-sys-color-outline:         var(--md-ref-palette-neutral-variant60);
+  --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant30);
+
+  --md-sys-color-inverse-surface:    var(--md-ref-palette-neutral90);
+  --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral20);
+  --md-sys-color-inverse-primary:    var(--md-ref-palette-primary40);
+
+  /* --- shadcn Bridge Variables (Dark) --- */
+  --background:               #201A12; /* md-sys-color-surface → neutral10 */
+  --foreground:               #EDE0D4; /* md-sys-color-on-surface → neutral90 */
+  --card:                     #201A12; /* md-sys-color-surface-container-low → neutral10 */
+  --card-foreground:          #EDE0D4; /* md-sys-color-on-surface → neutral90 */
+  --primary:                  #FACC15; /* md-sys-color-primary → primary80 */
+  --on-primary:               #5A2D00; /* md-sys-color-on-primary → primary20 */
+  --primary-container:        #713F00; /* md-sys-color-primary-container → primary30 */
+  --on-primary-container:     #FEF3C7; /* md-sys-color-on-primary-container → primary90 */
+  --secondary:                #F5C4A0; /* md-sys-color-secondary → secondary80 */
+  --on-secondary:             #5C2812; /* md-sys-color-on-secondary → secondary20 */
+  --secondary-container:      #7D3C1F; /* md-sys-color-secondary-container → secondary30 */
+  --on-secondary-container:   #FDDCBD; /* md-sys-color-on-secondary-container → secondary90 */
+  --tertiary:                 #A8C89A; /* md-sys-color-tertiary → tertiary80 */
+  --on-tertiary:              #2D4828; /* md-sys-color-on-tertiary → tertiary20 */
+  --surface:                  #201A12; /* md-sys-color-surface → neutral10 */
+  --on-surface:               #EDE0D4; /* md-sys-color-on-surface → neutral90 */
+  --surface-container:        #362F24; /* md-sys-color-surface-container → neutral20 */
+  --surface-container-low:    #201A12; /* md-sys-color-surface-container-low → neutral10 */
+  --surface-container-high:   #4D4538; /* md-sys-color-surface-container-high → neutral30 */
+  --on-surface-variant:       #CEC1AE; /* md-sys-color-on-surface-variant → neutral-variant80 */
+  --muted:                    #362F24; /* md-sys-color-surface-container → neutral20 */
+  --muted-foreground:         #CEC1AE; /* md-sys-color-on-surface-variant → neutral-variant80 */
+  --accent:                   #7D3C1F; /* md-sys-color-secondary-container → secondary30 */
+  --accent-foreground:        #FDDCBD; /* md-sys-color-on-secondary-container → secondary90 */
+  --destructive:              #FFB4AB; /* md-sys-color-error → error80 */
+  --destructive-foreground:   #690005; /* md-sys-color-on-error → error20 */
+  --border:                   transparent;
+  --input:                    #4D4538; /* md-sys-color-surface-container-high → neutral30 */
+  --ring:                     #FACC15; /* md-sys-color-primary → primary80 */
+  --outline:                  #978C7A; /* md-sys-color-outline → neutral-variant60 */
+  --outline-variant:          #4C4435; /* md-sys-color-outline-variant → neutral-variant30 */
+  --inverse-surface:          #EDE0D4; /* md-sys-color-inverse-surface → neutral90 */
+  --inverse-on-surface:       #362F24; /* md-sys-color-inverse-on-surface → neutral20 */
+  --inverse-primary:          #8B5E0F; /* md-sys-color-inverse-primary → primary40 */
+  --scrim:                    #000000; /* md-sys-color-scrim */
+  --error:                    #FFB4AB; /* md-sys-color-error → error80 */
+  --on-error:                 #690005; /* md-sys-color-on-error → error20 */
+  --error-container:          #93000A; /* md-sys-color-error-container → error30 */
+  --on-error-container:       #FFDAD6; /* md-sys-color-on-error-container → error90 */
+  --popover:                  #201A12; /* md-sys-color-surface-container-low → neutral10 */
+  --popover-foreground:       #EDE0D4; /* md-sys-color-on-surface → neutral90 */
 }
