@@ -12,56 +12,6 @@
 /* @import "./themes/theme-v2.css"; */
 /* @import "./themes/theme-v3.css"; */
 
-/* 5. Tailwind theme mapping — maps CSS vars to Tailwind utility names */
-@theme inline {
-  --color-primary:                var(--primary);
-  --color-on-primary:             var(--on-primary);
-  --color-primary-container:      var(--primary-container);
-  --color-on-primary-container:   var(--on-primary-container);
-  --color-secondary:              var(--secondary);
-  --color-on-secondary:           var(--on-secondary);
-  --color-secondary-container:    var(--secondary-container);
-  --color-on-secondary-container: var(--on-secondary-container);
-  --color-tertiary:               var(--tertiary);
-  --color-on-tertiary:            var(--on-tertiary);
-  --color-surface:                var(--surface);
-  --color-on-surface:             var(--on-surface);
-  --color-surface-container:      var(--surface-container);
-  --color-surface-container-low:  var(--surface-container-low);
-  --color-surface-container-high: var(--surface-container-high);
-  --color-on-surface-variant:     var(--on-surface-variant);
-  --color-error:                  var(--error);
-  --color-on-error:               var(--on-error);
-  --color-error-container:        var(--error-container);
-  --color-on-error-container:     var(--on-error-container);
-  --color-outline:                var(--outline);
-  --color-outline-variant:        var(--outline-variant);
-  --color-inverse-surface:        var(--inverse-surface);
-  --color-inverse-on-surface:     var(--inverse-on-surface);
-  --color-inverse-primary:        var(--inverse-primary);
-  --color-background:             var(--background);
-  --color-foreground:             var(--foreground);
-  --color-card:                   var(--card);
-  --color-card-foreground:        var(--card-foreground);
-  --color-muted:                  var(--muted);
-  --color-muted-foreground:       var(--muted-foreground);
-  --color-accent:                 var(--accent);
-  --color-accent-foreground:      var(--accent-foreground);
-  --color-destructive:            var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border:                 var(--border);
-  --color-input:                  var(--input);
-  --color-ring:                   var(--ring);
-  --color-popover:                var(--popover);
-  --color-popover-foreground:     var(--popover-foreground);
-  --color-scrim:                  var(--scrim);
-
-  --radius-sm:   var(--radius-small);
-  --radius-md:   var(--radius-medium);
-  --radius-lg:   var(--radius-large);
-  --radius-xl:   var(--radius-extra-large);
-  --radius-full: var(--radius-full);
-}
 
 :root {
   /* --- Primary Tonal Palette (example: a blue-ish hue) --- */
@@ -899,4 +849,55 @@ body {
   --on-error-container:       #FFDAD6; /* md-sys-color-on-error-container → error90 */
   --popover:                  #0F172A; /* md-sys-color-surface-container-low → neutral10 */
   --popover-foreground:       #F1F5F9; /* md-sys-color-on-surface → neutral90 */
+}
+
+/* 5. Tailwind theme mapping — maps CSS vars to Tailwind utility names */
+@theme inline {
+  --color-primary:                var(--primary);
+  --color-on-primary:             var(--on-primary);
+  --color-primary-container:      var(--primary-container);
+  --color-on-primary-container:   var(--on-primary-container);
+  --color-secondary:              var(--secondary);
+  --color-on-secondary:           var(--on-secondary);
+  --color-secondary-container:    var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-tertiary:               var(--tertiary);
+  --color-on-tertiary:            var(--on-tertiary);
+  --color-surface:                var(--surface);
+  --color-on-surface:             var(--on-surface);
+  --color-surface-container:      var(--surface-container);
+  --color-surface-container-low:  var(--surface-container-low);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-on-surface-variant:     var(--on-surface-variant);
+  --color-error:                  var(--error);
+  --color-on-error:               var(--on-error);
+  --color-error-container:        var(--error-container);
+  --color-on-error-container:     var(--on-error-container);
+  --color-outline:                var(--outline);
+  --color-outline-variant:        var(--outline-variant);
+  --color-inverse-surface:        var(--inverse-surface);
+  --color-inverse-on-surface:     var(--inverse-on-surface);
+  --color-inverse-primary:        var(--inverse-primary);
+  --color-background:             var(--background);
+  --color-foreground:             var(--foreground);
+  --color-card:                   var(--card);
+  --color-card-foreground:        var(--card-foreground);
+  --color-muted:                  var(--muted);
+  --color-muted-foreground:       var(--muted-foreground);
+  --color-accent:                 var(--accent);
+  --color-accent-foreground:      var(--accent-foreground);
+  --color-destructive:            var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border:                 var(--border);
+  --color-input:                  var(--input);
+  --color-ring:                   var(--ring);
+  --color-popover:                var(--popover);
+  --color-popover-foreground:     var(--popover-foreground);
+  --color-scrim:                  var(--scrim);
+
+  --radius-sm:   var(--radius-small);
+  --radius-md:   var(--radius-medium);
+  --radius-lg:   var(--radius-large);
+  --radius-xl:   var(--radius-extra-large);
+  --radius-full: var(--radius-full);
 }
