@@ -25,7 +25,6 @@ export default [
     },
     rules: {
       "custom-rules/no-inline-color-utilities": "error",
-      "no-unused-vars": "off",
     },
   },
   {
