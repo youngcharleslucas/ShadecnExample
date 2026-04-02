@@ -18,15 +18,24 @@ const PREFIXES = [
   "divide", "placeholder",
 ]
 
-// Matches e.g. "bg-red-500", "text-blue-300", "border-white", "bg-black"
-const COLOR_PATTERN = new RegExp(
+// Matches named Tailwind colors: "bg-red-500", "text-blue-300", "border-white", "bg-black"
+const NAMED_COLOR_PATTERN = new RegExp(
   `\\b(${PREFIXES.join("|")})-((${COLOR_NAMES.join("|")})(-(\\d+))?)(/(\\d+))?\\b`
 )
+
+// Matches arbitrary color values: "bg-[#fff]", "text-[rgb(0,0,0)]", "border-[hsl(...)]", "bg-[oklch(...)]"
+const ARBITRARY_COLOR_PATTERN = new RegExp(
+  `\\b(${PREFIXES.join("|")})-\\[(#[0-9a-fA-F]{3,8}|rgba?\\([^)]+\\)|hsla?\\([^)]+\\)|oklch\\([^)]+\\)|color\\([^)]+\\))(/(\\d+))?\\]`
+)
+
+function isInlineColor(cls) {
+  return NAMED_COLOR_PATTERN.test(cls) || ARBITRARY_COLOR_PATTERN.test(cls)
+}
 
 function checkString(str, node, context) {
   const classes = str.split(/\s+/)
   for (const cls of classes) {
-    if (COLOR_PATTERN.test(cls)) {
+    if (isInlineColor(cls)) {
       context.report({
         node,
         message: `Use a design token (e.g., bg-primary, text-foreground) instead of the raw Tailwind color utility '${cls}'.`,
